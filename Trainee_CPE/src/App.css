@@ -1,0 +1,27 @@
+.div-teste {
+    border: solid;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.div-botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   
+}
+
+.botao-teste {
+    width: 100px;
+    height: 30px;
+    border: solid;
+    border-radius: 8px;
+    background-color: aquamarine;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
