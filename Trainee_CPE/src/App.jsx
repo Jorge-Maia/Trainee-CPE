@@ -1,5 +1,6 @@
 import './App.css';
 
+
 function App() {
   return (
     <div className="pagina-cadastro">
@@ -23,7 +24,7 @@ function App() {
           <input type="email" placeholder="Email" /> <br />
           <input type= "text" placeholder='Cargo' /> <br />
           <input type="password" placeholder="Senha" /> <br />
-          <input type= "text" placeholder='Repetir Senha'/> <br /> 
+          <input type= "password" placeholder='Repetir Senha'/> <br /> 
           <p className="login-link">
             Já tem uma conta? Faça login <a href="/login">aqui</a>
           </p>
