@@ -1,27 +1,90 @@
-.div-teste {
-    border: solid;
-    height: 40px;
-    width: 200px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 15px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.div-botao {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-   
+.pagina-cadastro {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: none;
+  min-height: 100vh;
+  background-color: #000000; 
 }
 
-.botao-teste {
-    width: 100px;
-    height: 30px;
-    border: solid;
-    border-radius: 8px;
-    background-color: aquamarine;
-    color: black;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
+.logo {
+  background-color: #000000; 
+  text-align: left;
+  width: 15%;
+  height: auto;
+}
+.logo-container {
+  display: flex;
+  justify-content: flex-start; /* Alinha à esquerda */
+  background-color: #FFD101;
+}
+
+.conteudo-principal {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+
+}
+
+.conteudo-principal h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color:#FFD101;
+  text-align: center;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.formulario-cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+}
+
+.formulario-cadastro input {
+  width: 100%;
+  max-width: 600px;
+  min-width: 280px;
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color:rgb(240, 237, 233);
+  color:#000000;
+  margin-bottom: 0.5rem;
+}
+
+.formulario-cadastro button {
+  width: 100%;
+  font-size: 1.2rem;
+  height: 50px;
+  max-width: 450px;
+  min-width: 280px;
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffee00;
+  color:#000000;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-link {
+  margin-top: 0.5rem;
+  color: #ffff;
+  margin-bottom: auto;
+  font-size: 1.2rem;
+}
+.login-link a {
+  color: #ffee00;
+  text-decoration: none;
 }

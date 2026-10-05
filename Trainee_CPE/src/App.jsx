@@ -1,30 +1,37 @@
-import './App.css'
-import { Button } from 'antd';
-import { DownloadOutlined } from '@ant-design/icons';
-function App() {
+import './App.css';
 
-  function retornaButton() {
-    alert('Botão clicado!')
-  }
+function App() {
   return (
-    <div>
-      <div className="div-teste">
-      oiii
-      </div>
-      <div className= 'div-botao'>
-      <input type="text" placeholder="Digite seu nome" />
-      <button 
-      className='botao-teste'
-      onClick={retornaButton}>
-      Enviar
-      </button>
-      </div> 
-      <div>
-        <Button type= 'primary' size = 'large' shape ='square' icon ={<DownloadOutlined/>} >Botão do Ant Design</Button>
-      </div>
-    </div>
+    <div className="pagina-cadastro">
+      {/* 1. Cabeçalho */}
+      <header className="cabecalho">
         
-  )
+        <div className="logo-container">
+          <img src= "Imagens/cpe_cadastro_2.png" alt="Logo da CPE Jr." className="logo" />
+        </div>
+      </header>
+
+      {/* 2. Corpo / Container Principal */}
+      <main className="conteudo-principal">
+        <h1 >
+          CADASTRO
+          </h1>
+        
+
+        <form className="formulario-cadastro">
+          <input type="text" placeholder="Nome" /> <br />
+          <input type="email" placeholder="Email" /> <br />
+          <input type= "text" placeholder='Cargo' /> <br />
+          <input type="password" placeholder="Senha" /> <br />
+          <input type= "text" placeholder='Repetir Senha'/> <br /> 
+          <p className="login-link">
+            Já tem uma conta? Faça login <a href="/login">aqui</a>
+          </p>
+          <button type="submit">CRIAR CONTA</button>
+        </form>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
