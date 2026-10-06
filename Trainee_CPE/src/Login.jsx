@@ -1,7 +1,8 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 
-function App() {
+function Login() {
     return (
         <div className='background-login'>
             <img src= "Imagens/cpe_jr_cover.jpg" alt="Logo da CPE Jr." className="logo-login" />
@@ -20,7 +21,7 @@ function App() {
                            <input type="password" placeholder="Digite sua senha" /> <br />
                         </div>
                         <button type="submit" className='botao-entrar'>Entrar</button> <br />
-                        <button type="submit" className='botao-cadastrar'>Fazer Cadastro</button>
+                        <button type="submit" className='botao-cadastrar'> <Link to="/Cadastro">Fazer Cadastro</Link></button>
                     </form>
                             
             </main>
@@ -28,4 +29,4 @@ function App() {
     );
 }
 
-export default App;
+export default Login;

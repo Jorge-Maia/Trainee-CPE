@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 
 
-function App() {
+function Cadastro() {
   return (
     <div className="pagina-cadastro">
       {/* 1. Cabeçalho */}
@@ -26,7 +27,7 @@ function App() {
           <input type="password" placeholder="Senha" /> <br />
           <input type= "password" placeholder='Repetir Senha'/> <br /> 
           <p className="login-link">
-            Já tem uma conta? Faça login <a href="/login">aqui</a>
+            Já tem uma conta? Faça login <Link to="/login">aqui</Link>
           </p>
           <button type="submit">CRIAR CONTA</button>
         </form>
@@ -35,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default Cadastro;
