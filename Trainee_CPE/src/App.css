@@ -71,7 +71,7 @@
   padding: 0.8rem;
   border-radius: 50px;
   border: none;
-  background-color: #ffee00;
+  background-color: #FFD101;
   color:#000000;
   cursor: pointer;
   margin-top: 1rem;
@@ -84,6 +84,119 @@
   font-size: 1.2rem;
 }
 .login-link a {
-  color: #ffee00;
+  color: #FFD101;
   text-decoration: none;
+}
+
+/* Estilo tela login */
+
+.background-login {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  min-height: 100vh;
+  background-color: #000000; 
+}
+
+.logo-login {
+  background-color: #000000; 
+  padding: auto;
+  width: 30%;
+  height: auto;
+  margin: 2rem auto;
+  display: block;
+  margin-top: 2rem;
+
+}
+
+.formulario-cadastro-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+  margin-top: 5rem;
+}
+
+.formulario-cadastro-login input {
+  width: 100%;
+  max-width: 600px;
+  min-width: 280px;
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color:rgb(240, 237, 233);
+  color:#000000;
+  margin-bottom: 0.5rem;
+}
+.formulario-cadastro-login h2
+{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color:#ffffff;
+  text-align: center;
+  margin-top: 1rem;
+  align-items: left;
+}
+
+
+.formulario-cadastro-login .botao-cadastrar {
+  width: 100%;
+  font-size: 1.2rem;
+  height: 50px;
+  max-width: 340px;
+  min-width: 280px;
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffff;
+  color:#000000;
+  cursor: pointer;
+  margin: 0.2rem;
+}
+
+.formulario-cadastro-login .botao-entrar {
+  width: 100%;
+  font-size: 1.2rem;
+  height: 50px;
+  max-width: 600px;
+  min-width: 280px;
+  padding: 0.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #FFD101;
+  color:#000000;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+/* Container que agrupa o label, a linha e o input */
+.grupo-input {
+  width: 100%;
+  max-width: 600px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha o texto e a linha perfeitamente à esquerda dos inputs */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Estilo do texto "E-mail:" e "Senha:" */
+.grupo-input label {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: serif; /* Se quiser manter o estilo da imagem de referência */
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+/* A linha horizontal fina abaixo do texto */
+.linha-divisor {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #888888; /* Cor cinza suave para a linha */
+  margin-bottom: 0.6rem;
 }
