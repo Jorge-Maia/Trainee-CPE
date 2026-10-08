@@ -200,3 +200,30 @@
   background-color: #888888; /* Cor cinza suave para a linha */
   margin-bottom: 0.6rem;
 }
+
+
+/* ESTILO DO HOME */
+
+.logo-container-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  width: 100%;
+  margin: none;
+}
+
+.menu-opções ul { 
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.menu-opções a {
+  color:#FFD101;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: serif;
+  padding: 1rem 1.5rem;
+}

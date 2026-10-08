@@ -20,7 +20,7 @@ function Login() {
                            <hr className='linha-divisor' />
                            <input type="password" placeholder="Digite sua senha" /> <br />
                         </div>
-                        <button type="submit" className='botao-entrar'>Entrar</button> <br />
+                        <button type="submit" className='botao-entrar'> <Link to="/Home">Entrar</Link></button> <br />
                         <button type="submit" className='botao-cadastrar'> <Link to="/Cadastro">Fazer Cadastro</Link></button>
                     </form>
                             
