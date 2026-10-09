@@ -204,6 +204,12 @@
 
 /* ESTILO DO HOME */
 
+.pagina-home{
+  background-color: #000000;
+  padding: auto;
+  height: 100%;
+}
+
 .logo-container-home {
   display: flex;
   justify-content: space-between;
@@ -226,4 +232,96 @@
   font-weight: bold;
   font-style: serif;
   padding: 1rem 1.5rem;
+}
+
+/* Força o container principal do Swiper a assumir o comportamento de carrossel */
+.swiper {
+  width: 90% !important;
+  max-width: 1100px !important;
+  margin: 40px auto !important;
+  position: relative !important;
+}
+
+/* Garante que a pista interna dos slides flua horizontalmente */
+.swiper-wrapper {
+  display: flex !important;
+}
+
+/* Garante que cada card tenha largura adequada e não estique demais */
+.swiper-slide {
+  flex-shrink: 0 !important;
+}
+
+.card-carrossel {
+  background-color: #d9d9d9;
+  border: 5px solid #FFD101;
+  border-radius: 12px;
+  height: 250px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-carrossel h2 {
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+/* Container que segura o carrossel e as setas lado a lado */
+.carrossel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 15px auto;
+  position: relative;
+}
+
+/* Estilo dos botões personalizados de navegação */
+.custom-prev,
+.custom-next {
+  background-color: #FFD101;
+  color: #000000;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  margin: 0 15px; /* Afasta um pouco os botões dos cards */
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #e5bc00; /* Um amarelo um pouco mais escuro ao passar o rato */
+}
+
+.relogio {
+  width: 280px;
+  height: 280px;
+  background-color: #d9d9d9;
+  border: 5px solid #FFD101;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.relogio h2 {
+  color: #000000;
+  font-size: 3rem;
+  text-align: center;
+  font-family: bold;
 }
