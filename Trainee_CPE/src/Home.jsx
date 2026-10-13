@@ -65,7 +65,29 @@ function Home() {
             <div className='relogio'>
                 <h2> 3:00h</h2>
             </div>
+            <div>
+                <table className='tabela-membros'>
+                    <thead>
+                        <tr>
+                            <th>Membro</th>
+                            <th>Modelo</th>
+                            <th>Horário</th>
+                        </tr>
+                        <hr className='linha-divisor-home' />
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img className='foto-perfil'></img></td>
+                            <td> Nome Completo</td>
+                            <td> Presencial</td>
+                            <td> Chegada</td>
+                        </tr>
 
+                    </tbody>
+                </table>
+                
+                <button className='botao-home'>Fazer Login</button>
+            </div>               
         </div>
             
     );

@@ -325,3 +325,71 @@
   text-align: center;
   font-family: bold;
 }
+
+.tabela-membros {
+  background-color: #888888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 60%;
+  min-height: 100px;
+  border-radius: 12px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 2px solid #FFD101;
+}
+
+.tabela-membros th {
+  background-color: #c4c4c4;
+  color: #000000;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #FFD101;
+}
+
+.tabela-membros td {
+  padding: 15px;
+  color: #000000;
+  text-align: left;
+  border-bottom: 1px solid #b0b0b0; /* Linha subtil separando as linhas */
+}
+
+.tabela-membros td img {
+  display: block;
+}
+
+.linha-divisor-home {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #ffffff; /* Cor cinza suave para a linha */
+  margin-bottom: 0.6rem;
+}
+
+.foto-perfil {
+  border-radius: 100%;
+  background-color: #888888;
+  border: 5px solid #FFD101;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.botao-home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: center;
+  height: 30px;
+  max-width: 120px;
+  min-width: 60px;
+  border-radius: 50px;
+  border: none;
+  background-color: #FFD101;
+  color:#000000;
+  cursor: pointer;
+}
