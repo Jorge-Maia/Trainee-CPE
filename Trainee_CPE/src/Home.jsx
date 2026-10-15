@@ -73,16 +73,19 @@ function Home() {
                             <th>Modelo</th>
                             <th>Horário</th>
                         </tr>
-                        <hr className='linha-divisor-home' />
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img className='foto-perfil'></img></td>
-                            <td> Nome Completo</td>
-                            <td> Presencial</td>
+                            <div className='info-membro'>
+                                <td>
+                                    <img className='foto-perfil'></img>
+                                    <span>Nome Completo do Membro</span>
+                                </td>
+                            </div>
+                            <td className='alinhamento-tabela'> Presencial</td>
                             <td> Chegada</td>
                         </tr>
-
+                      
                     </tbody>
                 </table>
                 
