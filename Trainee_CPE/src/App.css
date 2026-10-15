@@ -375,6 +375,8 @@
   height: 60px;
   object-fit: cover;
   flex-shrink: 0;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .botao-home {
