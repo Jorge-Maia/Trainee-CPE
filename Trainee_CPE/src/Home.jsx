@@ -65,7 +65,8 @@ function Home() {
             <div className='relogio'>
                 <h2> 3:00h</h2>
             </div>
-            <div>
+            <div className='margem-tabela'>
+                <button className='botao-home'>Fazer Login</button>
                 <table className='tabela-membros'>
                     <thead>
                         <tr>
@@ -76,20 +77,19 @@ function Home() {
                     </thead>
                     <tbody>
                         <tr>
-                            <div className='info-membro'>
-                                <td>
-                                    <img className='foto-perfil'></img>
+                            
+                            <td className='info-membro'>
+                                    <img className='foto-perfil' src='Imagens/Foto-perfil.jpeg' ></img>
                                     <span>Nome Completo do Membro</span>
-                                </td>
-                            </div>
-                            <td className='alinhamento-tabela'> Presencial</td>
+                            </td>
+                            <td> Presencial</td>
                             <td> Chegada</td>
                         </tr>
-                      
+                       
                     </tbody>
                 </table>
                 
-                <button className='botao-home'>Fazer Login</button>
+                
             </div>               
         </div>
             

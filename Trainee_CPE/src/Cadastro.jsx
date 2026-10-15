@@ -5,7 +5,6 @@ import './App.css';
 function Cadastro() {
   return (
     <div className="pagina-cadastro">
-      {/* 1. Cabeçalho */}
       <header className="cabecalho">
         
         <div className="logo-container">
@@ -13,13 +12,11 @@ function Cadastro() {
         </div>
       </header>
 
-      {/* 2. Corpo / Container Principal */}
       <main className="conteudo-principal">
         <h1 >
           CADASTRO
           </h1>
-        
-
+      
         <form className="formulario-cadastro">
           <input type="text" placeholder="Nome" /> <br />
           <input type="email" placeholder="Email" /> <br />
@@ -29,7 +26,9 @@ function Cadastro() {
           <p className="login-link">
             Já tem uma conta? Faça login <Link to="/login">aqui</Link>
           </p>
-          <button type="submit">CRIAR CONTA</button>
+          <button type="submit"> 
+            <Link to = "/login">CRIAR CONTA</Link>
+          </button>
         </form>
       </main>
     </div>
