@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Cadastro from './Cadastro.jsx'
 import Login from './Login.jsx'
 import Home from './Home.jsx'
+import Usuario from './Usuario.jsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/usuario" element={<Usuario />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

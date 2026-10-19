@@ -1,7 +1,7 @@
 import './App.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
@@ -14,7 +14,7 @@ function Home() {
                     <nav className="menu-opções">
                         <ul>
 
-                            <li><a href="#usuario">Usuário</a></li>
+                            <li><Link to="/usuario">Usuário</Link></li>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#perfil">Perfil</a></li>
                             <li><a href="#sair">Sair</a></li>
