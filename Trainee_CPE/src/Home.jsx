@@ -4,8 +4,11 @@ import { Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { useState } from 'react';
+import Modal from './Modal.jsx';
 
 function Home() {
+    const [modalLoginAberto, setModalLoginAberto] = useState(false);
         return (
             <div className="pagina-home">
                 <header className="logo-container-home">
@@ -66,7 +69,7 @@ function Home() {
                 <h2> 3:00h</h2>
             </div>
             <div className='margem-tabela'>
-                <button className='botao-home'>Fazer Login</button>
+                <button className='botao-home' onClick={() => setModalLoginAberto(true)}>Fazer Login</button>
                 <table className='tabela-membros'>
                     <thead>
                         <tr>
@@ -90,7 +93,18 @@ function Home() {
                 </table>
                 
                 
-            </div>               
+            </div>
+            {modalLoginAberto && (
+                <Modal
+                    titulo="Você deseja mesmo fazer login?"
+                    texto="Tem certeza que você deseja fazer esse login?"
+                    textoBotao="CANCELAR"
+                    textoBotao2="LOGIN"
+                    aoFechar={() => setModalLoginAberto(false)}
+                    aoConfirmar={() => setModalLoginAberto(false)}
+                    aoSegundoBotao={() => setModalLoginAberto(false)}
+                />
+            )}              
         </div>
             
     );
