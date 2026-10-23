@@ -20,6 +20,7 @@ function Home() {
                             <li><Link to="/usuario">Usuário</Link></li>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#perfil">Perfil</a></li>
+                            <li><Link to="/projeto">Projetos</Link></li>
                             <li><a href="#sair">Sair</a></li>
 
                         </ul>

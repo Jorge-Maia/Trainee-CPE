@@ -7,6 +7,7 @@ import Cadastro from './Cadastro.jsx'
 import Login from './Login.jsx'
 import Home from './Home.jsx'
 import Usuario from './Usuario.jsx'
+import Projeto from './Projeto.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/home" element={<Home />} />
         <Route path="/usuario" element={<Usuario />} />
+        <Route path="/projeto" element={<Projeto />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -547,3 +547,33 @@ html, body {
     font-weight: bold;
     cursor: pointer;
 }
+
+.lista-projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.linha-projeto {
+  display: flex;
+  justify-content: space-between; /* Separa o nome (esquerda) dos ícones (direita) */
+  align-items: center;
+  padding: 15px 25px;
+  background-color: transparent; /* Ou a cor de fundo que preferires para a linha */
+  border-bottom: 1px solid #FFD101; /* Linha subtil entre os projetos */
+}
+
+.nome-projeto {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.icones-acao {
+  display: flex;
+  gap: 15px; /* Espaço entre o botão de editar e o de apagar */
+}
