@@ -1,7 +1,7 @@
-const moongose = require("moongose");
+require('dotenv').config();
+const mongoose = require('mongoose');
 
-async function startDB() {
-    await moongose.connect('mongodb+srv://jorgemaia_db_user:vhMldugn9QAQj59q@cpe.uftd8xw.mongodb.net/')
-}
-
-module.exports = startDB
+mongoose
+  .connect(process.env.MONGODB_URI)
+  .then(() => console.log('Conectado ao MongoDB'))
+  .catch((erro) => console.error('Erro ao conectar:', erro));
