@@ -11,9 +11,11 @@
     "start": "nodemon App.js"
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "dotenv": "^18.0.9",
     "express": "^5.3.0",
     "moongose": "^1.0.0",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "zod": "^4.6.7"
   }
 }
