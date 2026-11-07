@@ -5,7 +5,9 @@ class UsuarioController {
         try {
             const usuario = await UsuarioModel.create(req.body);
 
-        return res.status(200).json(usuario)
+            const { senha, ...novoUsuario} = usuario.toObject();
+
+        return res.status(200).json(novoUsuario)
 
         }
         catch (error) {
