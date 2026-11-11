@@ -19,9 +19,9 @@ class AuthController {
                 return res.status(403).json({ mensagem: "Email ou senha incorretos!" });
             }
 
-            const { senha: hashedSenha, ...payload } = usuarioEncontrado.toObject();
+            const { senha: hashedSenha, ...usuario } = usuarioEncontrado.toObject();
 
-            const token = await jwt.sign(payload, 
+            const token =  jwt.sign(usuario, 
                 process.env.JWT_SECRET, 
                 { expiresIn: process.env.JWT_EXPIRES_IN });
 
