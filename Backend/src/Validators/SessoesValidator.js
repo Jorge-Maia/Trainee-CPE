@@ -29,7 +29,7 @@ const create = validateRequest({
 
 const destroy = validateRequest({
     params: z.object({
-        id: z.custom(moongose.isValidObjectId, { message: "O ID da sessão não é válido" })
+    id_usuario: z.custom(moongose.isValidObjectId, { message: "O ID do usuário não é válido" })
     })
 });
 

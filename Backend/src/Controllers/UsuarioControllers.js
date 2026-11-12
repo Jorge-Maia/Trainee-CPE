@@ -63,7 +63,12 @@ class UsuarioController {
             .json({ "mensagem": "Erro ao deletar usuário!" });
         }
     }
-
+    async perfil(req, res) {
+        const usuario = await UsuarioModel.findById(req.usuarioId);
+        return res.status(200).json(usuario);
 }
+}
+
+
 
 module.exports = new UsuarioController();
