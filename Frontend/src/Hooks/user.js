@@ -1,6 +1,17 @@
 import {useQuery, useMutation} from '@tanstack/react-query';
 import { CreateUser, UpdateUsers, DeleteUsers, GetUsers } from '../services/api/endpoint';
 
+export function useLogin() {
+  return useMutation({
+    mutationFn: async ({ email, senha }) => {
+      const { data } = await api.post('/login', { email, senha });
+      return data;
+    },
+    onSuccess: (data) => {
+      localStorage.setItem('token', data.token);
+    },
+  });
+}
 
 export function useGetUser() {
     return useQuery({
