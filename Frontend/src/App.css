@@ -584,3 +584,53 @@ html, body {
   display: flex;
   gap: 15px; /* Espaço entre o botão de editar e o de apagar */
 }
+/* ---- Página de Projetos ---- */
+
+/* ícone de voltar no canto direito do cabeçalho amarelo */
+.botao-voltar {
+  margin-left: auto;          /* empurra o ícone para a direita */
+  margin-right: 2rem;
+  align-self: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* linha com a busca e o botão + */
+.barra-busca {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.barra-busca input {
+  flex: 1;                    /* ocupa todo o espaço que sobrar */
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.botao-adicionar {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

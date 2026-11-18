@@ -9,13 +9,19 @@ function Projeto() {
             <header className="cabecalho">     
                 <div className="logo-container">
                     <img src= "Imagens/cpe_cadastro_2.png" alt="Logo da CPE Jr." className="logo" />
+                    <Link to="/home" className="botao-voltar">↩</Link>
                 </div>
             </header>
             <main className='conteudo-principal-usuario'>
                 <h1>
                     GERENCIAR PROJETOS
                 </h1>
-                
+
+                <div className="barra-busca">
+                    <input type="text" placeholder="🔍" />
+                    <button className="botao-adicionar" title="Adicionar">+</button>
+                </div>
+
                 <div className="lista-projetos">
                     {projetos.map((projeto) => (
                     <div key={projeto._id} className="linha-projeto">
@@ -30,7 +36,6 @@ function Projeto() {
                 
                 
                 <div className='botoes-acao'>
-                    <button className='botao-usuario'><Link to="/Home">Cancelar</Link></button>
                     <button className='botao-usuario'><Link to="/Home">Salvar</Link></button>
                 </div>
             </main>
