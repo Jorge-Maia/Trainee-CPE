@@ -52,6 +52,7 @@ const update = validateRequest({
             .min(6, "O campo 'senha' deve ter no mínimo 6 caracteres").optional(),
         cargo: z.string().optional(),
         status: z.string().optional(),
+        foto: z.string().optional(),
 
     })
 });

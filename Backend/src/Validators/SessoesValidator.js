@@ -23,7 +23,8 @@ function validateRequest(schemas) {
 
 const create = validateRequest({
     body: z.object({
-        id_usuario: z.custom(moongose.isValidObjectId, { message: "O ID não é válido" })
+        id_usuario: z.custom(moongose.isValidObjectId, { message: "O ID não é válido" }),
+        modelo: z.string({ error: "O campo 'modelo' é obrigatório" })
     })
 });
 

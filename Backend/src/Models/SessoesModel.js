@@ -7,7 +7,8 @@ const SessoesSchema = new Schema ({
         type: Schema.Types.ObjectId,
         ref: 'usuarios',
         unique: true,
-    }, 
+    },
+    modelo: { type: String },
 }, {
     timestamps: true
 })

@@ -10,7 +10,8 @@ const UsuarioSchema = new Schema ({
     senha : { type: String, required: true, select: false },
     nome : { type: String, unique: true, required: true },
     cargo : { type: String, required: true },
-    status : { type: String}
+    status : { type: String},
+    foto : { type: String }
 })
 
 UsuarioSchema.pre('save', async function(next) {

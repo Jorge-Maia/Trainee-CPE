@@ -1,5 +1,6 @@
 import {useQuery, useMutation} from '@tanstack/react-query';
-import { CreateUser, UpdateUsers, DeleteUsers, GetUsers } from '../services/api/endpoint';
+import { CreateUser, UpdateUsers, DeleteUsers, GetUsers, GetPerfil } from '../services/api/endpoint';
+import api from '../services/api/api';
 
 export function useLogin() {
   return useMutation({
@@ -17,6 +18,13 @@ export function useGetUser() {
     return useQuery({
         queryKey: ['users'],
         queryFn: GetUsers
+    });
+}
+
+export function useGetPerfil() {
+    return useQuery({
+        queryKey: ['perfil'],
+        queryFn: GetPerfil
     });
 }
 

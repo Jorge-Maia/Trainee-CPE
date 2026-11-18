@@ -20,11 +20,12 @@ function validateRequest(schemas) {
     };
 }
 
-const login = validateRequest({})
+const login = validateRequest({
     body: z.object({
         email: z.email({ error: "O campo 'email' é obrigatório" }),
         senha: z.string().min(6, { message: "Senha deve ter no mínimo 6 caracteres" })
     })
+});
 
 
 module.exports = { login };
